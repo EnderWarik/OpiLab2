@@ -7,6 +7,5 @@ int main()
     cout << x + y;
 
     cout << "first";
-    cout << "second";
-    cout << "third";
+   
 }
