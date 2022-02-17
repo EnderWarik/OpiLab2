@@ -5,9 +5,10 @@
 using namespace std;
 int main()
 {
-    int x, y;
-    cin >> x >> y;
-    cout << x+y;
+    int number, numberTwo;
+    cout << "first";
+    cout << "second";
+    cout << "third";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
