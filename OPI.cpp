@@ -6,9 +6,11 @@ using namespace std;
 int main()
 {
     int number, numberTwo;
+    string operation;
     cout << "first";
     cout << "second";
     cout << "third";
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

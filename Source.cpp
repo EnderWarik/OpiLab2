@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
-int main()
+int mai()
 {
     int x, y;
     cin >> x >> y;
     cout << x + y;
 
     cout << "first";
+    return 0;
    
 }
