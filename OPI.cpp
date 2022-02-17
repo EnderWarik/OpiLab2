@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     int number, numberTwo;
-    string operation;
+    string o;
     char input[255];
     cin.getline(input, 255);
     cout << "first";
