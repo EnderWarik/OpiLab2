@@ -2,11 +2,18 @@
 //
 
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
     int number, numberTwo;
+<<<<<<< HEAD
     string oper;
+====== =
+string oper;
+    char input[255];
+    cin.getline(input, 255);
+>>>>>>> test_two
     cout << "first";
     cout << "second";
     cout << "third";
