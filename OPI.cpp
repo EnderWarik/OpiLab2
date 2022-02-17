@@ -3,20 +3,19 @@
 
 #include <iostream>
 #include <string>
+#include "Person.h"
 using namespace std;
+void ConsoleOut(string name, string age) {
+	 cout << "Name: " << name << endl << "Age: " << age << endl;
+}
 int main()
 {
-    int number, numberTwo;
-<<<<<<< HEAD
-    string oper;
-====== =
-string oper;
-    char input[255];
-    cin.getline(input, 255);
->>>>>>> test_two
-    cout << "first";
-    cout << "second";
-    cout << "third";
+	Person person = Person();
+	person.name = "Alex";
+	person.age = "19";
+	ConsoleOut(person.name, person.age);
+
+
 
 }
 
