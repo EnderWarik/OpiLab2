@@ -2,11 +2,14 @@
 //
 
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
     int number, numberTwo;
     string operation;
+    char input[255];
+    cin.getline(input, 255);
     cout << "first";
     cout << "second";
     cout << "third";
