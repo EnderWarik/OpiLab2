@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     int number, numberTwo;
-    string operation;
+    string oper;
     cout << "first";
     cout << "second";
     cout << "third";
