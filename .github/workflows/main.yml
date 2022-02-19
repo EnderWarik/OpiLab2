@@ -34,9 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-  doxygencreate:
-    runs-on: ubuntu-latest
-    steps:
+  #doxygencreate:
+   # runs-on: ubuntu-latest
+   # steps:
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: doxygen config
+   #   - name: Run a one-line script
+    #    run: doxygen config
