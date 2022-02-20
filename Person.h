@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 /*!
-	\brief Parent class that does not carry any semantic load
+	\brief Parent class that does not carry any semantic load UPDATE
 
 */
 class Person
