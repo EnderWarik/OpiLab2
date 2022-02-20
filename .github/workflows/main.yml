@@ -44,5 +44,13 @@ jobs:
       - name: Init
         run: |
           sudo apt-get install g++-10
-          g++ version
+          g++ -dumpversion
           g++ -I ./ OPI.cpp -o test
+          
+      - name: upload
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: test.app
+
+
