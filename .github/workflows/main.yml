@@ -38,6 +38,7 @@ jobs:
 
   doxygenpush:
     runs-on: ubuntu-latest
+    needs: [build]
     steps:
       - uses: actions/checkout@v2
       - name: Pushes to another repository
