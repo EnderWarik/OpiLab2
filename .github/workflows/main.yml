@@ -29,6 +29,7 @@ jobs:
           ls
           cd output
           mkdir fs
+          ls
           #sudo apt update
           #sudo apt-get install doxygen
           #doxygen config  
