@@ -31,10 +31,15 @@ jobs:
           doxygen config
 
       - name: upload
-        uses: actions/upload-artifact@v2
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          name: my-artifact
-          path: output/
+          source-directory: output/
+          destination-github-username: 'EnderWarik'
+          destination-repository-name: 'OpiLab2'
+          user-email: 2020102437@pnu.edu.ru
+          target-branch: main
 
   doxygenpush:
     runs-on: ubuntu-latest
