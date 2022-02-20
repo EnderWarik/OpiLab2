@@ -24,7 +24,7 @@ jobs:
           files: test_bool.txt
           
       - name: Run a one-line script
-        if: steps.check_files.outputs.files_exists == 'true'
+        if: steps.check_files.outputs.All_files_exists == 'true'
         run: echo Hello, world!
 
    #   - name: Run a multi-line script
