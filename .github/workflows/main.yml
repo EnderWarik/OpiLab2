@@ -48,7 +48,7 @@ jobs:
           g++ -I ./ OPI.cpp -o test
           
       - name: upload
-      - uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: my-artifact
           path: test.app
