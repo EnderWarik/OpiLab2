@@ -43,6 +43,6 @@ jobs:
         with:
           source-directory: 'OpiLab2'
           destination-github-username: 'EnderWarik'
-          destination-repository-name: 'OpiLab.io'
+          destination-repository-name: 'OpiLab2.io'
           user-email: 2020102437@pnu.edu.eu
           target-branch: main
