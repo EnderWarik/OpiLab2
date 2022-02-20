@@ -31,7 +31,7 @@ jobs:
           doxygen config
 
       - name: upload
-      - uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: my-artifact
           path: path/
