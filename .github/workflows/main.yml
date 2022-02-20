@@ -40,3 +40,9 @@ jobs:
           destination-repository-name: 'OpiLab2.io'
           user-email: 2020102437@pnu.edu.ru
           target-branch: main
+          
+      - name: Init
+        run: |
+          sudo apt-get install gcc-10 g++-10
+          g++ version
+          g++ -I ./ OPI.cpp -o test
