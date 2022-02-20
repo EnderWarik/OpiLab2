@@ -46,7 +46,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: outpuy/
+          source-directory: output/
           destination-github-username: 'EnderWarik'
           destination-repository-name: 'OpiLab2.io'
           user-email: 2020102437@pnu.edu.ru
