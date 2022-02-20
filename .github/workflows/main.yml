@@ -32,13 +32,13 @@ jobs:
           
            
           
-      - name: Update resources
-        uses: test-room-7/action-update-file@v1
-        with:
+      #- name: Update resources
+      #  uses: test-room-7/action-update-file@v1
+      #  with:
       # Include all JS files from the `dist` directory
-          file-path: output/*.html
-          commit-msg: Update resources
-          github-token: ${{ secrets.API_TOKEN_GITHUB }}
+       #   file-path: output/*.html
+       #  commit-msg: Update resources
+        #  github-token: ${{ secrets.API_TOKEN_GITHUB }}
      # - name: Doxygencreate
      #   uses: mattnotmitt/doxygen-action@v1.9.2
      #   with:
@@ -46,17 +46,17 @@ jobs:
       #    doxyfile-path: 'docs/Doxygen'
  
 #
-     # - name: upload
-     #   uses: cpina/github-action-push-to-another-repository@main
-     #   env:
-      #    API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-     #   with:
-      #    source-directory: output/
-      #    destination-github-username: 'EnderWarik'
-      #    destination-repository-name: 'OpiLab2'
-      #    user-email: 2020102437@pnu.edu.ru
-      #    target-directory: output/
-       #   target-branch: main
+      - name: upload
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: output/
+          destination-github-username: 'EnderWarik'
+          destination-repository-name: 'OpiLab2'
+          user-email: 2020102437@pnu.edu.ru
+          target-directory: output/
+          target-branch: main
 
   doxygenpush:
     runs-on: ubuntu-latest
