@@ -21,10 +21,10 @@ jobs:
         id: check_file
         uses: andstor/file-existence-action@v1
         with:
-          files: test_bool.txt
+          files: "test_bool.txt"
           
       - name: Run a one-line script
-        if: steps.check_files.outputs.All_files_exists == 'true'
+        if: steps.check_file.outputs.files_exists =='true'
         run: echo Hello, world!
 
    #   - name: Run a multi-line script
