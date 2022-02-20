@@ -26,9 +26,13 @@ jobs:
       - name: Doxygencreate
         if: steps.check_file.outputs.files_exists =='true'
         run: |
-          sudo apt update
-          sudo apt-get install doxygen
-          doxygen config    
+          ls
+          cd output
+          mkdir fs
+          #sudo apt update
+          #sudo apt-get install doxygen
+          #doxygen config  
+          
           
           
       - name: Update resources
