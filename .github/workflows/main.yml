@@ -45,7 +45,8 @@ jobs:
         run: |
           sudo apt-get install g++-10
           g++ -dumpversion
-          g++ -I ./ OPI.cpp -o test
+          g++ -I ./ OPI.cpp -o test.exe
+          ls
           
       - name: upload
         uses: actions/upload-artifact@v2
