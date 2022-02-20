@@ -6,7 +6,7 @@
 class Person
 {
 public:
-	std::string name; ///< person name
+	std::stsring name; ///< person name
 	std::string age;///< person age
 
 };
