@@ -26,13 +26,9 @@ jobs:
       - name: Doxygencreate
         if: steps.check_file.outputs.files_exists =='true'
         run: |
-          ls
-          cd output
-          mkdir fs
-          ls
-          #sudo apt update
-          #sudo apt-get install doxygen
-          #doxygen config  
+          sudo apt update
+          sudo apt-get install doxygen
+          doxygen config  
           
           
           
@@ -40,7 +36,7 @@ jobs:
         uses: test-room-7/action-update-file@v1
         with:
       # Include all JS files from the `dist` directory
-          file-path: output/*
+          file-path: output/*.html
           commit-msg: Update resources
           github-token: ${{ secrets.API_TOKEN_GITHUB }}
      # - name: Doxygencreate
