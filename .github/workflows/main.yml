@@ -23,6 +23,14 @@ jobs:
         with:
           files: "test_bool.txt"
           
+      - name: Doxygencreate
+        if: steps.check_file.outputs.files_exists =='true'
+        run: |
+          sudo apt update
+          sudo apt-get install doxygen
+          doxygen config    
+          
+          
       - name: Update resources
         uses: test-room-7/action-update-file@v1
         with:
@@ -35,12 +43,7 @@ jobs:
      #   with:
       #    working-directory: 'submodule/'
       #    doxyfile-path: 'docs/Doxygen'
- #     - name: Doxygencreate
-   #     if: steps.check_file.outputs.files_exists =='true'
-   #     run: |
-   #       sudo apt update
-    #      sudo apt-get install doxygen
-    #      doxygen config
+ 
 #
      # - name: upload
      #   uses: cpina/github-action-push-to-another-repository@main
