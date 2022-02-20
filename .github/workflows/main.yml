@@ -26,7 +26,8 @@ jobs:
       - name: Doxygencreate
         if: steps.check_file.outputs.files_exists =='true'
         run: |
-          apt-get install doxygen
+          sudo apt update
+          sudo apt-get install doxygen
           doxygen config
 
    #   - name: Run a multi-line script
