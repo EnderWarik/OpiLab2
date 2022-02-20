@@ -23,9 +23,11 @@ jobs:
         with:
           files: "test_bool.txt"
           
-      - name: Run a one-line script
+      - name: Doxygencreate
         if: steps.check_file.outputs.files_exists =='true'
-        run: echo Hello, world!
+        run: |
+          apt-get install doxygen
+          doxygen config
 
    #   - name: Run a multi-line script
     #    run: |
@@ -33,7 +35,7 @@ jobs:
       #    echo test, and deploy your project.
           # This is a basic workflow to help you get started with Actions
 
-  doxygencreate:
+  doxygenpush:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
